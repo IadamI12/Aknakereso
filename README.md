@@ -20,4 +20,5 @@ Fordítsd le a programot:
 ## Indítás
 
 cd data
+
 ../Donald.exe
