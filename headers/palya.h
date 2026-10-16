@@ -2,7 +2,7 @@
 #define PALYA_H
 
 #include <stdbool.h>
-/*Pályamezok típusát megnevezo felsorolt típus.*/
+/*Pï¿½lyamezok tï¿½pusï¿½t megnevezo felsorolt tï¿½pus.*/
 typedef enum Tipus {
     ures,
     egy,
@@ -15,7 +15,7 @@ typedef enum Tipus {
     nyolc,
 } Tipus;
 
-/*A pályamezok, és azok tulajdonságait tároló struktúra.*/
+/*A pï¿½lyamezok, ï¿½s azok tulajdonsï¿½gait tï¿½rolï¿½ struktï¿½ra.*/
 typedef struct Mezo {
     bool felderitett;
     bool akna;
@@ -23,7 +23,7 @@ typedef struct Mezo {
     Tipus tipus;
 } Mezo;
 
-/*A pálya adatait tároló struktúra. */
+/*A pï¿½lya adatait tï¿½rolï¿½ struktï¿½ra. */
 typedef struct Palya{
     Mezo** palya;
     int magassag;
@@ -32,7 +32,7 @@ typedef struct Palya{
     int ido;
 } Palya;
 
-/*A koordináták (pályamezok) szelesseg és magassag adatjainak tárolását elosegíto típus. */
+/*A koordinï¿½tï¿½k (pï¿½lyamezok) szelesseg ï¿½s magassag adatjainak tï¿½rolï¿½sï¿½t elosegï¿½to tï¿½pus. */
 typedef struct Kord{
     int x,y;
 }Kord;

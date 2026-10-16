@@ -1,4 +1,4 @@
-#ifdef WIN32
+#ifdef _WIN32
 #include <windows.h>
 #endif
 #include "debugmalloc.h"
@@ -6,12 +6,13 @@
 #include "vezerles.h"
 #include "megjelenites.h"
 
-/*A játék üzemeltetését vezérli, létrehozza a pályát, ha ez nem sikerült, jelzi a felhasználónak, és kilép a programból. Ha sikerült
-    létrehozni, akkor kirajzolja a kezdeti pályát, és elkezdodik a játék vezérlése. A végén a dinamikusan foglalt tömböket felszabadítja
-    memóriaszivárgás elkerülése végett*/
+/*A jï¿½tï¿½k ï¿½zemeltetï¿½sï¿½t vezï¿½rli, lï¿½trehozza a pï¿½lyï¿½t, ha ez nem sikerï¿½lt, jelzi a felhasznï¿½lï¿½nak, ï¿½s kilï¿½p a programbï¿½l. Ha sikerï¿½lt
+    lï¿½trehozni, akkor kirajzolja a kezdeti pï¿½lyï¿½t, ï¿½s elkezdodik a jï¿½tï¿½k vezï¿½rlï¿½se. A vï¿½gï¿½n a dinamikusan foglalt tï¿½mbï¿½ket felszabadï¿½tja
+    memï¿½riaszivï¿½rgï¿½s elkerï¿½lï¿½se vï¿½gett*/
 int main() {
-    #ifdef WIN32
+    #ifdef _WIN32
     SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
     #endif
     Palya p;
     bool sikeres = palyafugv(&p);
